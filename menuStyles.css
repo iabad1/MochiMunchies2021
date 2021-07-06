@@ -1,0 +1,199 @@
+:root{
+    --bg-color-plain: #ffffff;
+    --image-bg-color: #dfdfdf;
+    --main-bg-color: #75cff0;
+    --main2-bg-color: rgb(83, 83, 83);
+    --blur-color: #0000006d;
+
+    --matchaFlavor-color: #8cf7b7;
+    
+}
+
+/*--------Item Properties------------*/
+
+#cover{
+
+    display: none;
+    position: absolute;
+   
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--blur-color);
+}
+.menu-image img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    background-color: var(--image-bg-color);
+
+    
+}
+
+.menu-item-container{
+    position: relative;
+    cursor: pointer;
+    
+
+    width: 12rem;
+    padding: 0.82rem;
+
+    margin: 0 auto;
+}
+button{
+    font-family: Fredoka One;
+}
+.addPopUp-container{
+
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    
+    background-color: var(--bg-color-plain);
+
+    border-radius: 1.25rem;
+    width: 25rem;
+    padding-bottom: 20px;  
+    margin: 0 auto;
+    
+}
+
+.popUp-active{
+    display: block;
+}
+
+.pop-container{
+    position: relative;
+    margin: 0 auto;
+
+}
+
+.addPopUp-container h2{
+    padding-top: 70px;
+}
+
+.popUp-image{
+    
+   
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+    
+    
+}
+
+.quantity-buttons-container{
+    margin-bottom: 40px;
+}
+
+.quant-buttons{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--bg-color-plain);
+    
+    height: 40px;
+    width: 40px;
+    margin: 0 20px;
+    vertical-align: middle;
+
+    box-sizing: border-box;
+    border-color: transparent;
+    border-radius: 50%;
+
+    background-color: var(--main2-bg-color);
+    cursor: pointer;
+}
+
+.quant-buttons-wrapper input::-webkit-outer-spin-button,
+.quant-buttons-wrapper input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0; 
+
+}
+
+.quant-buttons-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    margin: 0 auto;
+}
+
+#mochiNumber{
+    
+
+    text-align: center;
+    font-size: 2rem;
+    height: 40px;
+    width: 8rem;
+
+    border: none;
+    border-radius: 0.855em;
+    background-color: whitesmoke;
+  
+}
+
+.cc-button{
+
+    border: none;
+    background-color: var(--matchaFlavor-color);
+    height: 40px;
+    width: 16rem;
+    padding: 5px;
+
+    cursor: pointer;
+
+    
+}
+
+/*-----Hamburger Pop up -------*/
+#hamburger-container-popUpLines{
+
+    position: relative;
+
+
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    
+    top: 10px;
+    left: 90%;
+
+    cursor: pointer;
+}
+
+
+.right-slant, .left-slant{
+  
+    position: absolute;
+    top: 12px;
+    right: 2px;
+    background-color: var(--main2-bg-color);
+    height: 4px;
+    width: 25px;
+    border-radius: 5px;
+}
+
+.right-slant{
+    transform: rotate(45deg);
+}
+.left-slant{
+    transform: rotate(-45deg);
+}
+
+
+.popUp-hide{
+    display: none;
+}
+
+/*--------------------Media Query--------------------*/

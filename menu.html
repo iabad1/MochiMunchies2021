@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochi Munchies 2021</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="menuStyles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto">
+</head>
+<body>
+    
+    <div id="cover"></div>
+    <div class="main-container" id="main-container">
+        
+        <header>
+
+            
+
+            <div id="logoSlogan-container">
+                
+                <div id="logo-Container">
+                
+                    <img src="images/MochiMunchLogoNoBG.svg" alt="Mochi Munch Logo">
+                  
+                
+                </div>
+
+                <div class="nav-links" id="nav-links">
+
+                    <ul>
+                        <li><a href="index.html" class="links">HOME</a></li>
+                        <li><a href="menu.html"  class="links">MENU</a></li>
+                        <li><a href="contact.html" class="links">CONTACT</a></li>
+                        <li><a href="mochiGame.html" class="links">MOCHI GAME</a></li>
+                    </ul>
+    
+                </div>
+                <div class="hamburger-container" id="hamburger-container" onclick="openNav()">
+                        
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+            
+                </div>
+                    
+            </div>
+        </header>
+
+        <main>
+            <section class="column">
+
+                
+                    <h1>Menu</h1>
+                    <div class="row">
+                        
+                        <div class="column">
+                            <p>Customizable flavors with a spread of positivity. Try our homemade mochi that was made from love!</p>
+                            <a href="menu.html" class="orderNow-Button" target="_blank">Order Now</a>
+                        </div>
+
+                    </div>
+                        
+                    
+            </section>
+
+            <section id="items">
+                
+
+                <div class="menu-item-list">
+
+
+                    <div class="menu-item-container" id="matchaItem" onclick="openMenuPopUp('matcha')">
+                        
+                        <div class="menu-image">
+                            <img src="images/m1.png" alt="Matcha Mochi image" class="item-image">
+                        </div>
+
+                        <div class="description">
+                            <span class="item-name">Matcha Mochi</span>
+                            <span class="item-price">$3.75</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="addPopUp-container" id="popUpMatcha">
+                    <div class="pop-container">
+                        <div class="hamburger-container-popUpLines" id="hamburger-container-popUpLines" onclick="closeMenuPopUp('matcha')">
+                        
+                            <span class="right-slant"></span>
+                            <span class="left-slant"></span>
+                        </div>
+                        <h2>Matcha Mochi</h2>
+                        <p>Gooey, sweet, and matcha-munchie!</p>
+                        <img src="images/m1.png" alt="Matcha Mochi image" class="popUp-image">
+                        <div class="quantity-buttons-container">
+                            <div class="quant-buttons-wrapper">
+                                <input type="button" class="decrButton quant-buttons" value="-">
+                                <input type="number" name="mochiNumber" id="mochiNumber" value="1">
+                                <input type="button" class="incrButton quant-buttons" value="+">
+                            </div>
+                        </div>
+                        <div class="packChoice-container">
+                            <div class="packChoices">
+                                <span class="packQuestion">Let's make things easier?</span>
+                                <span class="packChoice">4 piece</span>
+                                <span class="packChoice">8 piece</span>
+                            </div>
+                        </div>
+
+                        <div class="popUp-cc-buttons">
+                            <button class="continue-button cc-button">Add to Cart</button>
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+                <div class="menu-item-list">
+
+
+                    <div class="menu-item-container" id="strawberryItem" onclick="openMenuPopUp('strawberry')">
+                        
+                        <div class="menu-image">
+                            <img src="images/m2.png" alt="Strawberry Mochi image" class="item-image">
+                        </div>
+
+                        <div class="description">
+                            <span class="item-name">Strawberry Mochi</span>
+                            <span class="item-price">$3.75</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="addPopUp-container" id="popUpStrawberry">
+                    <div class="pop-container">
+                        <div class="hamburger-container-popUpLines" id="hamburger-container-popUpLines" onclick="closeMenuPopUp('strawberry')">
+                        
+                            <span class="right-slant"></span>
+                            <span class="left-slant"></span>
+                        </div>
+                        <h2>Strawberry Mochi</h2>
+                        <p>Strawberry on the insdie. Munchie on the outside.</p>
+                        <img src="images/m2.png" alt="Strawberry Mochi image" class="popUp-image">
+                        <div class="quantity-buttons-container">
+                            <div class="quant-buttons-wrapper">
+                                <input type="button" class="decrButton quant-buttons" value="-">
+                                <input type="number" name="mochiNumber" id="mochiNumber" value="1">
+                                <input type="button" class="incrButton quant-buttons" value="+">
+                            </div>
+                        </div>
+                        
+                        <div class="packChoice-container">
+                            <div class="packChoices">
+                                <span class="packQuestion">Let's make things easier?</span>
+                                <span class="packChoice">4 piece</span>
+                                <span class="packChoice">8 piece</span>
+                            </div>
+                        </div>
+
+                        <div class="popUp-cc-buttons">
+                            <button class="continue-button cc-button">Add to Cart</button>
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+                <div class="menu-item-list">
+
+
+                    <div class="menu-item-container" id="chocolateItem" onclick="openMenuPopUp('chocolate')">
+                        
+                        <div class="menu-image">
+                            <img src="images/m3.jpg" alt="Chocolate Mochi image" class="item-image">
+                        </div>
+
+                        <div class="description">
+                            <span class="item-name">Chocolate Mochi</span>
+                            <span class="item-price">$3.75</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="addPopUp-container" id="popUpChocolate">
+                    <div class="pop-container">
+                        <div class="hamburger-container-popUpLines" id="hamburger-container-popUpLines" onclick="closeMenuPopUp('chocolate')">
+                        
+                            <span class="right-slant"></span>
+                            <span class="left-slant"></span>
+                        </div>
+                        <h2>Chocolate Mochi</h2>
+                        <p>Chocolatey. Chewy. Munchie...</p>
+                        <img src="images/m3.jpg" alt="Chocolate Mochi image" class="popUp-image">
+                        <div class="quantity-buttons-container">
+                            <div class="quant-buttons-wrapper">
+                                <input type="button" class="decrButton quant-buttons" value="-">
+                                <input type="number" name="mochiNumber" id="mochiNumber" value="1">
+                                <input type="button" class="incrButton quant-buttons" value="+">
+                            </div>
+                        </div>
+                        
+                        <div class="packChoice-container">
+                            <div class="packChoices">
+                                <span class="packQuestion">Let's make things easier?</span>
+                                <span class="packChoice">4 piece</span>
+                                <span class="packChoice">8 piece</span>
+                            </div>
+                        </div>
+
+                        <div class="popUp-cc-buttons">
+                            <button class="continue-button cc-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item-list">
+
+
+                    <div class="menu-item-container" id="customItem" onclick="openMenuPopUp('custom')">
+                        
+                        <div class="menu-image">
+                            <img src="images/slideshow-3.jpg" alt="Group of Mochi image" class="item-image">
+                        </div>
+
+                        <div class="description">
+                            <span class="item-name">Customizable Mochi Box</span>
+                            <span class="item-price">$3.75</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="addPopUp-container" id="popUpCustom">
+                    <div class="pop-container">
+                        <div class="hamburger-container-popUpLines" id="hamburger-container-popUpLines" onclick="closeMenuPopUp('custom')">
+                        
+                            <span class="right-slant"></span>
+                            <span class="left-slant"></span>
+                        </div>
+                        <h2>Customizable Mochi Boxes</h2>
+                        <p>Choose a combination of Munchie flavors!.</p>
+                        <img src="images/slideshow-3.jpg" alt="Group of Mochi image" class="popUp-image">
+                        <div class="quantity-buttons-container">
+                            <div class="quant-buttons-wrapper">
+                                <input type="button" class="decrButton quant-buttons" value="-">
+                                <input type="number" name="mochiNumber" id="mochiNumber" value="1">
+                                <input type="button" class="incrButton quant-buttons" value="+">
+                            </div>
+                        </div>
+                        
+                        <div class="packChoice-container">
+                            <div class="packChoices">
+                                <span class="packQuestion">Let's make things easier?</span>
+                                <span class="packChoice">4 piece</span>
+                                <span class="packChoice">8 piece</span>
+                            </div>
+                        </div>
+
+                        <div class="popUp-cc-buttons">
+                            <button class="continue-button cc-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer><p>&copy; Mochi Munch 2021</p></footer>
+        
+    </div>
+    
+    
+
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
