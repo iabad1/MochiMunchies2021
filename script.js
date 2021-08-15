@@ -45,6 +45,14 @@ function openNav(){
 }
 
 //**************************************menu functions********************************************
+
+//let mochiNumber = document.getElementById('incrButton').addEventListener("click", increaseNum);
+
+// let packNumber2 = document.getElementById("mochiNumber2");
+// let packNumber3 = document.getElementById("mochiNumber3");
+// let packNumber4 = document.getElementById("mochiNumber4");
+
+
 let matchaItem = document.getElementById('matchaItem');
 let popUpMatcha = document.getElementById('popUpMatcha');
 let menuClassItems = document.getElementsByClassName('addPopUp-container');
@@ -58,6 +66,7 @@ function openMenuPopUp(itemName){
     //check for different items
     console.log(itemName);
     open = true;
+    //fixedPage.classList.add("active");
     if(searchMenu(itemName)){
         cover.style.display = 'block';
     }
@@ -66,6 +75,7 @@ function openMenuPopUp(itemName){
 
 function closeMenuPopUp(itemName){
     open = false;
+    //fixedPage.classList.remove("active");
     if(searchMenu(itemName)){
         cover.style.display = 'none';
     }
@@ -91,3 +101,31 @@ function searchMenu(itemName){
     return found; //returns false if not found
 }
 
+function increaseNum(mochiNumber){
+
+    console.log(mochiNumber);
+    let packNumber = document.getElementById(mochiNumber);
+    let num = parseInt(packNumber.getAttribute('value')) + 1;
+    packNumber.setAttribute('value', num);
+
+    console.log(packNumber.getAttribute('value'));
+    
+
+
+}
+
+function decreaseNum(mochiNumber){
+
+    console.log(mochiNumber);
+    let packNumber = document.getElementById(mochiNumber);
+    let num = parseInt(packNumber.getAttribute('value'));
+    if(num != 0){
+        num = parseInt(packNumber.getAttribute('value')) - 1;
+        packNumber.setAttribute('value', num);
+    }
+    
+    console.log(packNumber.getAttribute('value'));
+    
+
+
+}

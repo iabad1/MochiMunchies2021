@@ -1,5 +1,6 @@
 :root{
 
+    --bg-color-plain: #ffffff;
     --main-bg-color: #75cff0;
     --main2-bg-color: rgb(83, 83, 83);
     
@@ -126,7 +127,7 @@ header{
     font-family: Roboto;
     color:#fdfdfd;
 
-    background-color:rgba(255, 255, 255, 0.85);
+    background-color: var(--bg-color-plain);
 
 }
 
@@ -185,6 +186,7 @@ section{
 .main-container.active{
     position: fixed;
     width: 100%;
+    z-index: 4;
 }
 
 p{
